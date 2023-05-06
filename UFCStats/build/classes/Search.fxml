@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SearchController">
+   <top>
+      <TitledPane animated="false" collapsible="false" prefHeight="733.0" prefWidth="935.0" text="Search Fighters" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="446.0" prefWidth="933.0">
+               <children>
+                  <Text fill="RED" layoutX="12.0" layoutY="28.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="SEARCH FOR A FIGHTER" wrappingWidth="357.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="88.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME" wrappingWidth="144.90399169921875">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="firstNameBox" layoutX="159.0" layoutY="66.0" promptText="Enter first name" />
+                  <Text layoutX="357.0" layoutY="87.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME" wrappingWidth="147.90399169921875">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="lastNameBox" layoutX="504.0" layoutY="65.0" promptText="Enter last name" />
+                  <Button fx:id="submitSearchButton" layoutX="681.0" layoutY="64.0" mnemonicParsing="false" onAction="#searchSubmitted" text="SEARCH">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="searchResultsText" fill="RED" layoutX="200.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="461.13671875">
+                     <font>
+                        <Font name="Barlow Condensed Black" size="34.0" />
+                     </font></Text>
+                  <Text layoutX="14.0" layoutY="160.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="RESULTS:" wrappingWidth="119.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Black" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterName" layoutX="357.0" layoutY="211.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="266.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="212.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="FIGHTER NAME" wrappingWidth="185.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="261.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="COUNTRY" wrappingWidth="127.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterCountry" layoutX="357.0" layoutY="260.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="266.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="306.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="HEIGHT" wrappingWidth="95.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterHeight" layoutX="357.0" layoutY="307.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="266.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="358.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="WEIGHT" wrappingWidth="95.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterWeight" layoutX="357.0" layoutY="360.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="266.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="403.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="DIVISION" wrappingWidth="123.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterDivision" layoutX="357.0" layoutY="404.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="382.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="446.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="REACH" wrappingWidth="95.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterReach" layoutX="357.0" layoutY="449.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="266.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="489.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="STYLE" wrappingWidth="95.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterStyle" layoutX="357.0" layoutY="490.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="266.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="536.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="AGE" wrappingWidth="95.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterAge" layoutX="357.0" layoutY="537.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="266.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="127.0" layoutY="582.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="RECORD" wrappingWidth="118.90399169921875">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayFighterRecord" layoutX="357.0" layoutY="572.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="418.90399169921875">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="26.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+   </top>
+</BorderPane>

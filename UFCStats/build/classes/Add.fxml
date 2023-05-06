@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="968.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddController">
+   <top>
+      <TitledPane animated="false" collapsible="false" prefHeight="975.0" prefWidth="752.0" text="Add Fighter" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text fill="RED" layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD A FIGHTER">
+                     <font>
+                        <Font name="Barlow Condensed Black" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="151.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME" wrappingWidth="142.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="firstNameBoxAdd" layoutX="296.0" layoutY="69.0" promptText="Enter first name" />
+                  <Text layoutX="152.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME" wrappingWidth="140.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="lastNameBoxAdd" layoutX="296.0" layoutY="114.0" promptText="Enter last name" />
+                  <Text layoutX="155.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HEIGHT" wrappingWidth="112.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="feetTallBox" layoutX="296.0" layoutY="194.0" prefHeight="25.0" prefWidth="31.0" />
+                  <Text layoutX="152.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WEIGHT " wrappingWidth="91.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="weightBox" layoutX="296.0" layoutY="269.0" promptText="Enter weight " />
+                  <Text layoutX="241.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(lbs.)" wrappingWidth="44.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="150.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REACH" wrappingWidth="77.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="241.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(in.)" wrappingWidth="44.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="333.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ft" wrappingWidth="23.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="inchesTallBox" layoutX="370.0" layoutY="194.0" prefHeight="25.0" prefWidth="31.0" />
+                  <Text layoutX="409.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="in" wrappingWidth="23.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="reachBox" layoutX="296.0" layoutY="313.0" promptText="Enter reach " />
+                  <Text layoutX="458.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lbs" wrappingWidth="34.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="463.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="in" wrappingWidth="23.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="150.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STYLE" wrappingWidth="77.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="fighterStyleBox" layoutX="296.0" layoutY="352.0" promptText="ex: &quot;Brazilian Jiu Jitsu&quot;" />
+                  <Text layoutX="150.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AGE" wrappingWidth="48.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="ageBox" layoutX="296.0" layoutY="392.0" prefHeight="25.0" prefWidth="49.0" />
+                  <Text layoutX="360.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="years" wrappingWidth="51.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="155.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEX" wrappingWidth="43.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="sexBox" layoutX="296.0" layoutY="231.0" promptText="ex: Male/Female" />
+                  <Text layoutX="148.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECORD" wrappingWidth="100.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="winsBox" layoutX="296.0" layoutY="430.0" prefHeight="25.0" prefWidth="34.0" />
+                  <Text layoutX="333.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W" wrappingWidth="23.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="lossesBox" layoutX="354.0" layoutY="430.0" prefHeight="25.0" prefWidth="34.0" />
+                  <Text layoutX="397.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L" wrappingWidth="23.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="drawsBox" layoutX="415.0" layoutY="430.0" prefHeight="25.0" prefWidth="34.0" />
+                  <Text layoutX="452.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D" wrappingWidth="23.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="noContestsBox" layoutX="484.0" layoutY="430.0" prefHeight="25.0" prefWidth="34.0" />
+                  <Text layoutX="526.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NC" wrappingWidth="29.46698760986328">
+                     <font>
+                        <Font name="Barlow Condensed Regular" size="21.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="createNewFighterButton" layoutX="281.0" layoutY="483.0" mnemonicParsing="false" onAction="#addFighterSubmitted" prefHeight="57.0" prefWidth="128.0" text="Create New Fighter" />
+                  <Text layoutX="151.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COUNTRY" wrappingWidth="112.46698760986328">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="countryBox" layoutX="296.0" layoutY="154.0" promptText="Enter Country" />
+                  <DialogPane fx:id="addFighterDisplayPane" layoutX="23.0" layoutY="559.0" prefHeight="379.0" prefWidth="707.0" />
+                  <Text fx:id="displayMessage" fill="LIME" layoutX="84.0" layoutY="625.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="540.13671875">
+                     <font>
+                        <Font name="Barlow Condensed Black" size="34.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </top>
+</BorderPane>
